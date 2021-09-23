@@ -4,14 +4,14 @@ import axios from "axios";
 
 const API = apiURL();
 
-const ConnectionsList = ({ uid }) => {
+const ConnectionsList = ( {uid} ) => {
   const [friendsList, setFriendsList] = useState([]);
 
   const fetchList = async () => {
     try {
       let res = await axios.get(`${API}/users/${uid}/connections`);
-    //   console.log(res.data);
-      setFriendsList(res.data[0]);
+      console.log('this is res.data', res.data);
+      setFriendsList(res.data);
     } catch (error) {
       console.log(error);
     }
@@ -20,12 +20,19 @@ const ConnectionsList = ({ uid }) => {
   useEffect(() => {
     fetchList();
   }, [uid]);
-
+  debugger
   return (
     <div>
-      {friendsList ? (
+      {friendsList.length ? (
         <>
-          <h1>CONNECTIONS</h1> <h1>{friendsList.display_name}</h1>
+          <h1>CONNECTIONS</h1> 
+          {/* <h1>{friendsList.display_name}</h1> */}
+
+          {/* <h1>{friendsList[0].display_name}</h1> */}
+
+          <h1>{friendsList.map((friend) => {
+            return friend.display_name
+          })}</h1> 
         </>
       ) : (
         <>
