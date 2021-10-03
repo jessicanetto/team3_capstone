@@ -52,7 +52,7 @@ export const DashboardInfo = () => {
   
   return (
     <section className="dashboard">
-      <h1 className ="cardName">Welcome to TieIn</h1>
+      <h1 className="cardName">Welcome to TieIn</h1>
       <div className="cardDiv">
         <div className="card">
           <h1 className="cardName">
@@ -74,22 +74,27 @@ export const DashboardInfo = () => {
             {userInfo.linkedin ? userInfo.linkedin : "no url found"}
           </p>
           <hr />
+        </div>
       </div>
-    </div>
-     
-     <div className="buttons"> 
+
+      <div className="buttons">
         <Link to="/dashboard/edit">
-        <button ><i class="fas fa-edit"></i></button>
+          <button>
+            <i class="fas fa-edit"></i>
+          </button>
         </Link>
-        <button ><i class="fas fa-redo-alt"></i></button>
-      <button onClick={handleLogout}> LOG OUT</button>
-     <Link to="/connections">
-        <button><i class="fas fa-users"></i></button>
-     </Link>
-    
-     </div>
-    
-     
+        <Link to="/qrcode">
+        <button>
+          <i class="fas fa-redo-alt"></i>
+        </button>
+        </Link>
+        <button onClick={handleLogout}> LOG OUT</button>
+        <Link to="/connections">
+          <button>
+            <i class="fas fa-users"></i>
+          </button>
+        </Link>
+      </div>
     </section>
   );
 };
