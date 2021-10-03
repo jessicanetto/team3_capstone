@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <section>
+        <div className="cardDiv">
+          <div className="card">
+            <h1 className="cardName">
+              <label></label> {external.display_name}
+            </h1>
+            <hr />
+            <p className="cardPhoneNumber">
+              <label>PhoneNumber:</label>
+              {external.phone_number}
+            </p>
+            <hr />
+            <p className="cardEmail">
+              <label>Email:</label>
+              {external.email}
+            </p>
+            <hr />
+            <p className="cardWebsite">
+              <label>LinkedIn:</label>
+              {external.linkedin ? external.linkedin : "no url found"}
+            </p>
+            <hr />
+          </div>
+        </div>
+    
+    
+        <!-- <button onClick= {addConnection}>Add Connection</button> -->
+      </section>
+</body>
+</html>
