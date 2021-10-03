@@ -2,12 +2,9 @@ import { useContext, useEffect, useState } from "react";
 import { UserContext } from "../Providers/UserProvider";
 import { useHistory } from "react-router-dom";
 import { signOut } from "../Services/Firebase";
-// import ConnectionsList from "./ConnectionsList.js"
 import { apiURL } from "../util/apiURL";
 import axios from "axios";
-import Card from "../Components/Card";
 import "../index.css";
-import { DashboardEdit } from "./DashboardEdit";
 import { Link } from "react-router-dom";
 const API = apiURL();
 
@@ -60,17 +57,17 @@ export const DashboardInfo = () => {
           </h1>
           <hr />
           <p className="cardPhoneNumber">
-            <label>PhoneNumber:</label>
+            <label><i class="fas fa-mobile-alt"></i></label>
             {userInfo.phone_number}
           </p>
           <hr />
           <p className="cardEmail">
-            <label>Email:</label>
+            <label><i class="far fa-envelope"></i></label>
             {userInfo.email}
           </p>
           <hr />
           <p className="cardWebsite">
-            <label>LinkedIn:</label>
+            <label><i class="fab fa-linkedin"></i></label>
             {userInfo.linkedin ? userInfo.linkedin : "no url found"}
           </p>
           <hr />

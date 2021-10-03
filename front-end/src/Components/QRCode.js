@@ -2,6 +2,7 @@ import  QRCode from "qrcode"
 import { useEffect, useState, useContext } from "react";
 import { UserContext } from "../Providers/UserProvider";
 import { apiURL } from "../util/apiURL";
+import {Link} from 'react-router-dom'
 
 const API = apiURL();
 
@@ -14,11 +15,12 @@ const QrCode = () => {
     }, [])
     
     const generateQR = async ()=>{
-
+        
         try {
-            QRCode.toDataURL(`${API}/users/JzsbUy5H7tMu2Hs0Y7mFzVk41oC2`).then((data) =>{
+            QRCode.toDataURL(`https://dry-savannah-93616.herokuapp.com/users/${user.uid}`).then((data) =>{
                 setSrc(data)
             })
+            
         } catch (error) {
          console.log(error)   
         }
