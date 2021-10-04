@@ -1,58 +1,4 @@
-body {
-  background-color:#f1faee;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-.connections{
-  background-color: white;
-}
-
-.App {
-  display: flex;
-  justify-content: center;
-  }
-
-  .dashboard img {
-    border-radius: 50%;
-  }
-
-  .connections { text-align: center;}
-
-  .Login-msg {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 80vh;
-    background-color: #457b9d;
-    border-radius: 1rem;
-    min-width: 20rem;
-  }
-  
-
-
-  .Login-msg button {
-    width: 55%;
-    background-color: white;
-  }
-
-  .landing-page{
-    display: flex;
-    margin-top: 5rem;
-    
-   
-  }
-
-  h1, p {
+h1, p {
     font-family: Lato;
   }
   
@@ -154,23 +100,8 @@ code {
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
-  table, th, td {
-    border: 3px solid black;
-  }
-  
+ 
 
-  table {
-    border-collapse: collapse;
-  }
-
-  td {
-    padding: 10px;
-  }
-
-.card i{
-  font-size: 2rem;
-  margin-right: 1rem;
-}
 
   .card i{
     font-size: 2rem;
@@ -181,42 +112,3 @@ code {
     display: flex;
     align-items: center;
   }
-
-
-/* these are buttons on dashboard */
-.buttons{
-  display: flex;
-  justify-content: space-evenly;
-  border-radius: 5%;
-  padding: 1rem;
-  border:none;
-  margin-top: .5em;
-
-}
-
-.buttons button{
-  border-radius: 2rem;
-  padding: .5rem;
-  cursor: pointer;
-}
-
-.buttons button i{
-  font-size: 1.5rem;
-}
-
-/* dashboard edit css */
-.card h1{
-margin:0;}
-
-.card input{
-  height: 1rem;
-}
-
-.dash-edit-btns button{
-  margin-right: 1rem;
-  border-radius: 2rem;
-  cursor: pointer;
-
-}
-/* -------------- */
-

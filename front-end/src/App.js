@@ -9,6 +9,8 @@ import { LoginPage } from "./Pages/LoginPage";
 import { Dashboard } from "./Pages/Dashboard";
 import { Edit } from "./Pages/Edit";
 import SignUp from './Components/SignUp'
+import QrCode from "./Components/QRCode.js";
+import ExternalPage from "./Pages/ExternalPage.js";
 
 // import { UserContext } from "./Providers/UserProvider.js";
 
@@ -23,8 +25,14 @@ function App() {
             <Route exact path="/">
               <LoginPage />
             </Route>
+            <Route exact path="/external">
+              <ExternalPage />
+            </Route>
             <Route exact path="/signup" >
               <SignUp />
+            </Route>
+            <Route exact path="/qrcode" >
+              <QrCode />
             </Route>
             <Route path="/connections">
               <Connections />

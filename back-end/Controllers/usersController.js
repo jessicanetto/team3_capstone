@@ -1,4 +1,6 @@
 const express = require("express");
+const path = require('path');
+
 const users = express.Router();
 const {
   addUser,
@@ -42,6 +44,24 @@ users.get("/:id", async (req, res) => {
     return error;
   }
 });
+
+
+//SHOW ROUTE FOR ONLY DISPLAY CARD AFTER SCANNING QR SCODE 
+
+// users.use(express.static(__dirname))
+users.get("/:id/card", async (req, res) => {
+  try {
+    const user = await getUserById(req.params.id);
+    // res.send(`<html><h2>${user.payload.display_name}</h2></html>`);
+    res.sendFile(path.join(__dirname, '../index.html'))
+  } catch (error) {
+    return error;
+    
+  }
+})
+users.get('/:id/card', function(req, res) {
+  res.sendFile(path.join(__dirname, '../style.css') )
+})
 
 // UPDATE
 users.put("/:id", async (req, res) => {
