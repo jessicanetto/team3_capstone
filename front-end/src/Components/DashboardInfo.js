@@ -68,7 +68,10 @@ export const DashboardInfo = () => {
           <hr />
           <p className="cardWebsite">
             <label><i class="fab fa-linkedin"></i></label>
-            {userInfo.linkedin ? userInfo.linkedin : "no url found"}
+
+
+            <a href={userInfo.linkedin ? userInfo.linkedin : "no url found"}>{userInfo.linkedin ? userInfo.linkedin : "no url found"}</a>
+
           </p>
           <hr />
         </div>
@@ -84,6 +87,7 @@ export const DashboardInfo = () => {
         <button>
           <i class="fas fa-redo-alt"></i>
         </button>
+
         </Link>
         <button onClick={handleLogout}> LOG OUT</button>
         <Link to="/connections">
@@ -91,7 +95,17 @@ export const DashboardInfo = () => {
             <i class="fas fa-users"></i>
           </button>
         </Link>
+
+        </Link>
+        <button onClick={handleLogout}> LOG OUT</button>
+        <Link to="/connections">
+          <button>
+            <i class="fas fa-users"></i>
+          </button>
+        </Link>
+
       </div>
     </section>
+
   );
 };

@@ -167,6 +167,10 @@ code {
     padding: 10px;
   }
 
+.card i{
+  font-size: 2rem;
+  margin-right: 1rem;
+}
 
   .card i{
     font-size: 2rem;
@@ -177,6 +181,7 @@ code {
     display: flex;
     align-items: center;
   }
+
 
 /* these are buttons on dashboard */
 .buttons{
