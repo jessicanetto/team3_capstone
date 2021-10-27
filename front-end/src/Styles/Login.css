@@ -1,23 +1,24 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Nunito:wght@600&family=Rubik:wght@300&display=swap');
-.login-container{
+/* @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Nunito:wght@600&family=Rubik:wght@300&display=swap'); */
+/* .login-container{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     min-height: 10rem;
     font-family: 'Nunito', sans-serif;
 
-}
+} */
+
 /* body{
     background:url(https://previews.123rf.com/images/nirut123rf/nirut123rf1702/nirut123rf170200711/71401738-double-exposure-of-businessman-handshake-on-industrial-business-background-connections-concept-eleme.jpg)
 } */
 
-.logo {
+/* .logo {
     height: 1em;
     padding-right: .5em;
-}
+} */
 
-.login {
+/* .login {
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -27,22 +28,22 @@
     border-radius: 15px;
     border-bottom: solid;
 
-}
+} */
 
-.spanmessage{
+/* .spanmessage{
     color: white;
-}
+} */
 
 
-form{
+/* form{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     min-height: 12rem;
     
-}
+} */
 
-input{
+/* input{
     width: 12rem;
     height: 2rem;
     border-radius: 10px;
@@ -51,9 +52,9 @@ input{
     border-bottom: solid;
     margin-top:.5em;
     
-}
+} */
 
-.login-btn{
+/* .login-btn{
     border-radius: 10px;
     padding: .5rem;
     border:none;
@@ -63,10 +64,10 @@ input{
     margin-left: 20%;
     cursor: pointer;
 
-}
+} */
 
-.Login-msg{
+/* .Login-msg{
     display: flex;
     justify-content: left;
     align-content: left;
-}
+} */

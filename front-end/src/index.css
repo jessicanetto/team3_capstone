@@ -1,34 +1,34 @@
-body {
-  background-color:#EDE9E7;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+/* body { */
+  /* background-color:#EDE9E7; */
+  /* margin: 0; */
+  /* font-family:  BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+    sans-serif; */
+  /* -webkit-font-smoothing: antialiased; */
+  /* -moz-osx-font-smoothing: grayscale; */
+/* } */
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */
 
-.connections{
+/* .connections{
   background-color: white;
-}
+  text-align: center;
+} */
 
-.App {
+/* .App {
   display: flex;
   justify-content: center;
-  }
 
-  .dashboard img {
+  } */
+
+/* .dashboard img {
     border-radius: 50%;
-  }
+  } */
 
-  .connections { text-align: center;}
-
-  .Login-msg {
+/* .Login-msg {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,28 +36,26 @@ code {
     background-color: #457b9d;
     border-radius: 1rem;
     min-width: 20rem;
-  }
-  
+  } */
 
-
-  .Login-msg button {
+/* .Login-msg button {
     width: 55%;
     background-color: white;
-  }
+  } */
 
-  .landing-page{
+/* .landing-page{
     display: flex;
     margin-top: 5rem;
     
    
-  }
+  } */
 
-  h1, p {
+/* h1, p {
     font-family: Lato;
   }
-  
-  
-  .container{
+   */
+
+/* .container{
     width:800px;
     height:100px;
     position: fixed;
@@ -65,190 +63,215 @@ code {
     left: 30%;
     margin-top: -100px;
     margin-left: -100px;
-  }
-  
-  .box{
+  } */
+
+/* .box{
     width: 500px;
     border-radius:2px;
     margin: 0 auto auto 250px;
     padding:0px 0px 2px 0px; 
-  }
-  
-  .name, .lastName, .phone, .eMail, .webSite{
+  } */
+
+/* .name, .lastName, .phone, .eMail, .webSite{
     background:#ecf0f1;
     border: #ccc 1px solid;
     border-bottom: #ccc 2px solid;
     padding: 8px;
     width:250px;
-    color:#AAAAAA;
+    color:orange;
     margin-top:5px;
     font-size:1em;
     border-radius:4px;
-  }
-  
-  .cardDiv {
-    width:41em;
-    height:22em;
-    /* color:#777; */
-    /* background-color:#F0F0F0; */
-    background-color: #2F526E;
-    margin:5% auto 0 auto;
-    border-radius:0.4em;
-    border-top-right-radius:0.37em;
-    border-bottom-right-radius:0.37em;
-    box-shadow:0 0 3px rgba(0,0,0,0.15);
-    transition:box-shadow 200ms ease-in;
-  }
-  
-  .cardDiv:before{
-    content:'';
-    /* background: linear-gradient(270deg, #2ae6f6, #2af6be, #81ffdc); */
-    /* background: linear-gradient(90deg, rgba(147,69,157,1) 0%, rgba(138,52,149,1) 22%, rgba(236,100,219,0.8099614845938375) 56%); */
-    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(138,52,149,1) 22%);
+  } */
 
+/* .cardDiv { */
+  /* width:41em; */
+  /* height:22em; */
+  /* color:#777; */
+  /* background-color:#F0F0F0; */
+  /* background-color: #2f526e; */
+  /* margin:5% auto 0 auto; */
+  /* border-radius:0.4em; */
+  /* border-top-right-radius:0.37em; */
+  /* border-bottom-right-radius:0.37em; */
+  /* box-shadow:0 0 3px rgba(0,0,0,0.15); */
+  /* transition:box-shadow 200ms ease-in; */
+/* } */
 
-    -webkit-animation: AnimationName 15s ease infinite;
-    -moz-animation: AnimationName 15s ease infinite;
-    animation: AnimationName 15s ease infinite;
-    background-size: 600% 600%;
-    background-position:30% 70%;
-    width:12em;
-    height:22em;
-    display:block;
-    position:absolute;
-    
-  }
-    
-  .card {
-    padding:1.6em 2em 2em 14em;
-    }
-      
-  .cardName {
-    /* color:#008080; */
-    color: #EDE9E7;
+/* .cardDiv:before { */
+  /* content: ""; */
+  /* background: linear-gradient(270deg, #2ae6f6, #2af6be, #81ffdc); */
+  /* background: linear-gradient(90deg, rgba(147,69,157,1) 0%, rgba(138,52,149,1) 22%, rgba(236,100,219,0.8099614845938375) 56%); */
+  /* background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(138, 52, 149, 1) 22%
+  ); */
+
+  /* -webkit-animation: AnimationName 15s ease infinite;
+  -moz-animation: AnimationName 15s ease infinite;
+  animation: AnimationName 15s ease infinite; */
+  /* background-size: 600% 600%;
+  background-position: 30% 70%;
+  width: 12em;
+  height: 22em;
+  display: block;
+  position: absolute; */
+/* } */
+
+/* .card {
+  padding: 1.6em 2em 2em 14em;
+} */
+
+/* .cardName { */
+/* color:#008080; */
+/* color: #EDE9E7;
     font-size:2.2em;
     letter-spacing:1px;
-    }
-      
-  hr {
+    } */
+
+/* hr {
     height:2px;
     background: #93459d;
-    border: none;
-    /* background:blue; */
-    margin:1em 0;
+    border: none; */
+/* background:blue; */
+/* margin:1em 0;
     width:85%;
-  }
-  
-  .cardAddress, .cardPhoneNumber, .cardEmail, .cardWebsite{
+  } */
+
+/* .cardAddress, .cardPhoneNumber, .cardEmail, .cardWebsite{
     font-family:'Ubuntu Mono',monospace;
     margin:1em 0;
     font-weight:700;
-    /* color: black; */
-    color: #EDE9E7;
-
-  }
-
+  } */
+/* 
   .cardWebsite a:link{
     color:#EDE9E7;
   }
-    
-    
-  @-webkit-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-  table, th, td {
-    border: 3px solid black;
-  }
-  
+     */
 
-  table {
-    border-collapse: collapse;
+/* @-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
   }
-
-  td {
-    padding: 10px;
+  50% {
+    background-position: 100% 50%;
   }
+  100% {
+    background-position: 0% 50%;
+  }
+} */
+/* @-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} */
+/* @keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} */
+/* table,
+th,
+td {
+  border: 3px solid black;
+} */
 
-.card i{
+/* table {
+  border-collapse: collapse;
+} */
+
+/* td {
+  padding: 10px;
+} */
+
+/* .card i{
   font-size: 2rem;
   margin-right: 1rem;
   color: #EDE9E7;
-}
+} */
 
-.card p{
+/* .card p{
   display: flex;
   align-items: center;
-}
+} */
+
 /* these are buttons on dashboard */
-.buttons{
+/* .buttons{
   display: flex;
   justify-content: space-evenly;
   border-radius: 5%;
   padding: 1rem;
   border:none;
   margin-top: .5em;
-}
+} */
 
-.buttons button{
+/* .buttons button{
   border-radius: 2rem;
   padding: .5rem;
   cursor: pointer;
-}
+} */
 
-.buttons button i{
+/* .buttons button i{
   font-size: 1.5rem;
-}
+} */
 
 /* dashboard edit css */
-.card h1{
-margin:0;}
+/* .card h1 {
+  margin: 0;
+} */
 
-.card input{
+/* .card input {
   height: 1rem;
-  margin-left: .5rem;
-}
+  margin-left: 0.5rem;
+} */
 
-.dash-edit-btns button{
+/* .dash-edit-btns button {
   margin-right: 1rem;
   border-radius: 2rem;
   cursor: pointer;
+} */
 
-}
-
-.dash-edit-btns i {
+/* .dash-edit-btns i {
   font-size: 2rem;
-  color: black;
-}
+  color: orange;
+} */
 
-.dash-edit-btns{
+/* .dash-edit-btns {
   display: flex;
   justify-content: space-between;
   margin-top: 1rem;
-}
+} */
 /* -------------- */
 
-.QRCodeBack i{
-  color: black; 
+/* .QRCodeBack i {
+  color: black;
   font-size: 1.5rem;
-}
+} */
 
-.QRCodeBack {
+/* .QRCodeBack {
   border-radius: 2rem;
   cursor: pointer;
-}
+} */
 
-button{
- border: #457b9d solid;
-}
+/* button {
+  border: #457b9d solid;
+} */
+
+/* .search-bar {
+  border: 1px solid black;
+  height: 40px;
+  margin: 10px;
+} */

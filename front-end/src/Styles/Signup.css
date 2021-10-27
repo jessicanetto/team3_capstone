@@ -1,4 +1,4 @@
-.signup{
+/* .signup{
     background-color: #2F526E;
     border-radius: 1rem;
     padding: 3rem;
@@ -6,9 +6,9 @@
     display: flex;
     align-items: center;
     
-}
+} */
 
-.signup button{
+/* .signup button{
     border-radius: 1rem;
     width: 50%;
     height: 2rem;
@@ -17,19 +17,19 @@
     border-bottom: solid;
     margin-top: 1rem;
  
-}
+} */
 
-.signup span{
+/* .signup span{
     margin-top: .5rem;
-}
+} */
 
-.header{
+/* .header{
     text-align: center;
-}
+} */
 
-.signup a:visited {
+/* .signup a:visited {
     color: pink;
     background-color: transparent;
     text-decoration: none;
     
-  }
+  } */
