@@ -13,8 +13,15 @@ const getUsers = async () => {
 
 // QUERY FOR POST ROUTE
 const addUser = async (user) => {
-  const { linkedin, twitter, email, display_name, photo_url, phone_number, uid } =
-    user;
+  const {
+    linkedin,
+    twitter,
+    email,
+    display_name,
+    photo_url,
+    phone_number,
+    uid,
+  } = user;
   try {
     const user = await db.one(
       "INSERT INTO users (linkedin, twitter, email, display_name, photo_url, phone_number, uid) VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING *",
@@ -38,7 +45,8 @@ const getUserById = async (uid) => {
 
 // UPDATE
 const updateUserById = async (uid, body) => {
-  const { linkedin, twitter, email, display_name, photo_url, phone_number} = body;
+  const { linkedin, twitter, email, display_name, photo_url, phone_number } =
+    body;
   try {
     const updateUser = await db.one(
       "UPDATE users SET linkedin=$1, twitter=$2,  email=$3, display_name=$4, photo_url=$5, phone_number=$6 WHERE uid=$7 RETURNING *",
@@ -70,14 +78,15 @@ const getAllConnectionsForUser = async (uid) => {
   try {
     const connectionsByUser = await db.any(
       ` SELECT * FROM users JOIN connections ON users.uid = connections.user1_id OR users.uid = connections.user2_id
-        WHERE ( connections.user1_id=$1 OR connections.user2_id=$1) 
-        AND users.uid != $1`, uid
-    )
-    return connectionsByUser
+        WHERE (connections.user1_id=$1 OR connections.user2_id=$1) 
+        AND users.uid != $1`,
+      uid
+    );
+    return connectionsByUser;
   } catch (error) {
-    console.log(error)
+    return (error);
   }
-}
+};
 
 //add a connection to user's collection
 //POST /users/:id/connections/:connections_id
@@ -86,12 +95,12 @@ const addNewConnectionToUser = async (user1_id, user2_id) => {
     let add = await db.none(
       `INSERT INTO connections (user1_id, user2_id) VALUES ($1, $2)`,
       [user1_id, user2_id]
-    )
-    return !add
+    );
+    return !add;
   } catch (error) {
-    console.log(error)
+    return (error);
   }
-}
+};
 
 //delete a connection from a user's collection
 //DELETE /users/:id/connections/:connections_id
@@ -99,14 +108,14 @@ const addNewConnectionToUser = async (user1_id, user2_id) => {
 const deleteConnectionFromUser = async (user1_id, user2_id) => {
   try {
     let remove = await db.none(
-      `DELETE FROM connections WHERE user1_id=$1 AND user2_id=$2`, 
+      `DELETE FROM connections WHERE user1_id=$1 AND user2_id=$2`,
       [user1_id, user2_id]
-    )
-    return !remove
+    );
+    return !remove;
   } catch (error) {
-    console.log(error)
+    return (error);
   }
-}
+};
 module.exports = {
   addUser,
   getUsers,
@@ -114,6 +123,6 @@ module.exports = {
   deleteUser,
   updateUserById,
   getAllConnectionsForUser,
-  addNewConnectionToUser, 
-  deleteConnectionFromUser
+  addNewConnectionToUser,
+  deleteConnectionFromUser,
 };

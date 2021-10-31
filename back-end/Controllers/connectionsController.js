@@ -22,7 +22,7 @@ connections.get(`/:id`, async(req, res) => {
         const oneConnection = await getOneConnection(id)
         res.json(oneConnection)
     } catch (error) {
-        console.log(error)
+        return error;
     }
 })
 module.exports = connections

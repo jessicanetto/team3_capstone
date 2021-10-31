@@ -25,7 +25,7 @@ const DashboardEdit = () => {
         await axios.put(`${API}/users/${user.uid}`, userInfoNew)
         history.push(`/dashboard`)
     }catch (error){
-        console.log(error)
+        return error
     }
   };
   useEffect(() => {
@@ -35,7 +35,7 @@ const DashboardEdit = () => {
         console.log(res);
         setUserInfoNew(res.data.payload);
       } catch (error) {
-        console.log(error);
+        return error;
       }
     };
     getInfo();

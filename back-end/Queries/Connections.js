@@ -5,7 +5,7 @@ const getAllConnections = async () => {
         const allConnections = await db.any('SELECT * FROM connections');
         return allConnections
     } catch (error) {
-        console.log(error)
+        return error;
     }
 }
 const getOneConnection = async (id) => {
@@ -13,7 +13,7 @@ const getOneConnection = async (id) => {
         const getOneConnection = await  db.one('SELECT * FROM connections WHERE id=$1', id)
         return getOneConnection
     } catch (error) {
-     console.log(error)   
+     return error;   
     }
 }
 module.exports = {

@@ -12,8 +12,6 @@ const ConnectionsList = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const user = useContext(UserContext);
 
-  
-
   const handleSearch = (e) => {
     setSearchTerm(e.target.value);
     setDisplayList((_) => {
@@ -32,7 +30,7 @@ const ConnectionsList = () => {
         const res = await axios.get(`${API}/users/${user.uid}/connections`);
         setFriendsList((_friendsList) => {
           setDisplayList(res.data);
-          return res.data
+          return res.data;
         });
       } catch (error) {
         return error;
@@ -51,7 +49,7 @@ const ConnectionsList = () => {
         })
       );
     } catch (error) {
-      console.log(error);
+      return error;
     }
   };
 
