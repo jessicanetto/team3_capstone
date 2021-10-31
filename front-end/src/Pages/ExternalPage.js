@@ -1,11 +1,10 @@
 import { UserContext } from "../Providers/UserProvider";
 import axios from 'axios'
 import { apiURL } from '../util/apiURL';
-import {useParams, useHistory} from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 import { useEffect, useState, useContext } from "react";
 const API = apiURL()
 const ExternalPage = () => {
-    // const {id} = useParams()
     let history = useHistory()
     const user = useContext(UserContext);
     const [external, setExternal] = useState({
@@ -20,7 +19,6 @@ const ExternalPage = () => {
     const getSingleUser = async () => {
         try {
           let res = await axios.get(`${API}/users/${user.uid}`);
-        //   debugger
           setExternal(res.data.payload);
         } catch (error) {
           console.log(error);
