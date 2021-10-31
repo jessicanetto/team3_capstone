@@ -13,10 +13,6 @@ code {
     monospace;
 }
 
-.connections{
-  background-color: white;
-}
-
 .App {
   display: flex;
   justify-content: center;
