@@ -1,6 +1,10 @@
 *, h1 {
+  --darkblue: #1d3557;
+  --lightblue: #45789d;
+  --taupe: #f1faee;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 
 body {
   background-color: #ede9e7;
