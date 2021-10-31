@@ -109,7 +109,7 @@ const DashboardEdit = () => {
       </form>
           <div className="dash-edit-btns">
           <Link to="/dashboard">
-            <button ><i class="fas fa-chevron-circle-left"></i></button>
+            <button ><i class="fas fa-angle-left"></i></button>
           </Link>
           <button type="submit"><i class="fas fa-check"></i></button>
 

@@ -38,7 +38,7 @@ const QrCode = () => {
           <hr />
           <Link to="/dashboard">
             <button className="QRCodeBack">
-              <i class="fas fa-chevron-circle-left"></i>
+              <i class="fas fa-angle-left"></i>
             </button>
           </Link>
         </div>
