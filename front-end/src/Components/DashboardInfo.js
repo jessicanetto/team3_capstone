@@ -60,17 +60,17 @@ export const DashboardInfo = () => {
           </h1>
           <hr />
           <p className="cardPhoneNumber">
-            <label><i class="fas fa-mobile-alt"></i></label>
+            <label><i className="fas fa-mobile-alt"></i></label>
             {userInfo.phone_number}
           </p>
           <hr />
           <p className="cardEmail">
-            <label><i class="far fa-envelope"></i></label>
+            <label><i className="far fa-envelope"></i></label>
             {userInfo.email}
           </p>
           <hr />
           <p className="cardWebsite">
-            <label><i class="fab fa-linkedin"></i></label>
+            <label><i className="fab fa-linkedin"></i></label>
             <a href={userInfo.linkedin ? userInfo.linkedin : "no url found"}>{userInfo.linkedin ? userInfo.linkedin : "no url found"}</a>
           </p>
           <hr />
@@ -80,18 +80,18 @@ export const DashboardInfo = () => {
       <div className="buttons">
         <Link to="/dashboard/edit">
           <button>
-            <i class="fas fa-edit"></i>
+            <i className="fas fa-edit"></i>
           </button>
         </Link>
         <Link to="/qrcode">
         <button>
-          <i class="fas fa-redo-alt"></i>
+          <i className="fas fa-redo-alt"></i>
         </button>
         </Link>
         <button onClick={handleLogout}> LOG OUT</button>
         <Link to="/connections">
           <button>
-            <i class="fas fa-users"></i>
+            <i className="fas fa-users"></i>
           </button>
         </Link>
       </div>
