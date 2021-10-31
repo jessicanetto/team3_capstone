@@ -58,28 +58,28 @@ render(){
     
     <input
     className = 'name'
-    placeHolder = {this.state.name}
+    placeholder = {this.state.name}
     type = 'text'
     onChange = {this.handleChangeName}
     />
        
     <input
     className = 'phone'
-    placeHolder = {this.state.phoneNumber}
+    placeholder = {this.state.phoneNumber}
     type = 'text'
     onChange = {this.handleChangePhoneNumber}
     />
 
     <input
     className = 'eMail'
-    placeHolder = {this.state.email}
+    placeholder = {this.state.email}
     type = 'text'
     onChange = {this.handleChangeEmail}
     />
 
     <input
     className = 'webSite'
-    placeHolder = {this.state.linkedin}
+    placeholder = {this.state.linkedin}
     type = 'text'
     onChange = {this.handleChangelinkedin}
     />
