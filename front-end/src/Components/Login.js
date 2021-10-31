@@ -66,6 +66,7 @@ export const Login = () => {
       <div className="login-container">
         <div onClick={handleSignInGoogle} className="login">
           <img
+            alt="logo"
             className="logo"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
           />
@@ -74,6 +75,7 @@ export const Login = () => {
 
         <div onClick={handleSignInGithub} className="login">
           <img
+            alt="logo"
             className="logo"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
           />
