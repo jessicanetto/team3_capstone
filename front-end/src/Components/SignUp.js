@@ -1,9 +1,6 @@
-import axios from "axios";
-import { useContext, useEffect, useState } from "react";
+import { useState } from "react";
 import { useHistory, Link } from "react-router-dom";
-import { UserContext } from "../Providers/UserProvider";
 import { signUpWithEmailAndPassword } from "../Services/Firebase";
-import { apiURL } from "../util/apiURL";
 import "../Styles/Signup.css"
 
 const SignUp =() => {
