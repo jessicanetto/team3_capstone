@@ -3,7 +3,7 @@ import "../Styles/Welcome.css"
 const Welcome = () => {
     return(
         <section className="welcome-container">
-            <img alt="iphone image" className="iphoneImg" src={iphoneLogo} />
+            <img alt="iphone" className="iphoneImg" src={iphoneLogo} />
         </section>
     )
 }
