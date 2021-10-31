@@ -2,12 +2,9 @@ import { useContext, useEffect, useState } from "react";
 import { UserContext } from "../Providers/UserProvider";
 import { useHistory } from "react-router-dom";
 import { signOut } from "../Services/Firebase";
-// import ConnectionsList from "./ConnectionsList.js"
 import { apiURL } from "../util/apiURL";
 import axios from "axios";
-import Card from "../Components/Card";
 import "../index.css";
-import { DashboardEdit } from "./DashboardEdit";
 import { Link } from "react-router-dom";
 const API = apiURL();
 
