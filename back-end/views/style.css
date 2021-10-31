@@ -54,7 +54,7 @@
   }
   
   .cardAddress, .cardPhoneNumber, .cardEmail, .cardWebsite{
-    font-family:'Ubuntu Mono',monospace;
+    /* font-family:'Ubuntu Mono',monospace; */
     margin:1em 0;
     font-weight:700;
     color: #EDE9E7;

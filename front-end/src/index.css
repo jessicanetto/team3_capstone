@@ -58,10 +58,10 @@ body {
   margin-top: 5rem;
 }
 
-h1,
+/* h1,
 p {
   font-family: Lato;
-}
+} */
 
 .container {
   width: 800px;
@@ -155,7 +155,7 @@ hr {
 .cardPhoneNumber,
 .cardEmail,
 .cardWebsite {
-  font-family: "Ubuntu Mono", monospace;
+  /* font-family: "Ubuntu Mono", monospace; */
   margin: 1em 0;
   font-weight: 700;
   /* color: black; */
