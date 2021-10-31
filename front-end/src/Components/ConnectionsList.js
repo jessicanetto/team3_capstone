@@ -12,17 +12,7 @@ const ConnectionsList = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const user = useContext(UserContext);
 
-  const fetchList = async () => {
-    try {
-      const res = await axios.get(`${API}/users/${user.uid}/connections`);
-      setFriendsList((_friendsList) => {
-        setDisplayList(res.data);
-        return res.data
-      });
-    } catch (error) {
-      return error;
-    }
-  };
+  
 
   const handleSearch = (e) => {
     setSearchTerm(e.target.value);
@@ -37,6 +27,17 @@ const ConnectionsList = () => {
   };
 
   useEffect(() => {
+    const fetchList = async () => {
+      try {
+        const res = await axios.get(`${API}/users/${user.uid}/connections`);
+        setFriendsList((_friendsList) => {
+          setDisplayList(res.data);
+          return res.data
+        });
+      } catch (error) {
+        return error;
+      }
+    };
     fetchList();
   }, [user]);
 
