@@ -52,7 +52,7 @@ export const DashboardInfo = () => {
   
   return (
     <section className="dashboard">
-      <h1 className="cardName">Welcome to TieIn</h1>
+      {/* <h1 className="cardName">Welcome to TieIn</h1> */}
       <div className="cardDiv">
         <div className="card">
           <h1 className="cardName">

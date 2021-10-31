@@ -1,8 +1,61 @@
+/* .iphone-border {
+  position: relative;
+  border: black solid 15px;
+  border-radius: 35px;
+  width: 50vw;
+  height: 90vw;
+} */
+
+/* .iphone-front-camera-border {
+  position: relative;
+  left: 67px;
+  bottom: 450px;
+  z-index: 3;
+  border-radius: 1px 1px 10px 10px;
+  background: black;
+  width: 25vw;
+  height: 16px;
+} */
+
+/* .iphone-screen {
+  position: relative;
+  z-index: 2;
+  bottom: 16px;
+  background: blue;
+  border-radius: 20px;
+  width: 50vw;
+  height: 90vw;
+} */
+
+/* .iphone-front-camera {
+    bottom: 446px;
+    left: 105px;
+    z-index: 5;
+    position: absolute;
+    border-radius: 10px;
+    background-color: rgb(119, 118, 118);
+    width: 45px;
+    height: 5px;
+  } */
+
+/* .iphone-front-speaker {
+  bottom: 445px;
+  left: 160px;
+  z-index: 5;
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgb(119, 118, 118);
+  width: 8px;
+  height: 8px;
+} */
+
+/* .iphone-btn, .iphone-btn1 {
+    
+} */
+
 /* .iphoneImg{
     height: 80vh;
     min-width: 20rem;
     border-radius: 1rem;
     margin-right: 2rem;
-
-
 } */

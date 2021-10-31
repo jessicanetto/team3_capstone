@@ -1,73 +1,128 @@
+* {
+  --darkblue: #1d3557;
+  --lightblue: #45789d;
+  --taupe: #f1faee;
+}
 
-/* @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Nunito:wght@600&family=Rubik:wght@300&display=swap'); */
-/* .login-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    min-height: 10rem;
-    font-family: 'Nunito', sans-serif;
+button {
+  border: none;
+}
 
-} */
+.App {
+    margin-top: 60px;
+}
 
-/* body{
-    background:url(https://previews.123rf.com/images/nirut123rf/nirut123rf1702/nirut123rf170200711/71401738-double-exposure-of-businessman-handshake-on-industrial-business-background-connections-concept-eleme.jpg)
-} */
+h1 {
+    background-color: green;
+    color: var(--taupe);
+    /* position: relative; */
+    /* z-index: 100; */
+}
 
-/* .logo {
-    height: 1em;
-    padding-right: .5em;
-} */
+.logo {
+  width: 30px;
+  margin-right: 20px;
+}
 
-/* .login {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    padding: .5rem;
-    border-radius: 15px;
-    border-bottom: solid;
+.login {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  border-bottom: solid;
+  justify-content: center;
+  background-color: var(--taupe);
+  border-radius: 15px;
+  margin-top: 10px;
+  padding: 0 3px;
+  width: 300px;
+  height: 50px;
+}
 
-} */
+.login-heading {
+  color: var(--darkblue);
+  text-align: center;
+}
 
-/* .spanmessage{
-    color: white;
-} */
+.form-container {
+  margin: auto;
 
+  width: 70vw;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),
+    0 7px 20px 0 rgba(190, 24, 24, 0.2);
+  position: relative;
+  border-radius: 10px;
+}
 
-/* form{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    min-height: 12rem;
-    
-} */
+.form-content-left {
+  background-color: var(--lightblue);
+  border-radius: 10px 0 0 10px;
+  position: relative;
+}
 
-/* input{
-    width: 12rem;
-    height: 2rem;
-    border-radius: 10px;
-    border: none;
-    text-align: center;
-    border-bottom: solid;
-    margin-top:.5em;
-    
-} */
+.form-img {
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
-/* .login-btn{
-    border-radius: 10px;
-    padding: .5rem;
-    border:none;
-    border-bottom: solid;
-    margin-top: .5em;
-    background-color:#abdadc;
-    margin-left: 20%;
-    cursor: pointer;
+.form-content-right {
+  background-color: var(--darkblue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0 10px 10px 0;
+  position: relative;
+}
 
-} */
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-/* .Login-msg{
-    display: flex;
-    justify-content: left;
-    align-content: left;
-} */
+.form-input {
+  margin-top: 10px;
+  display: block;
+  padding-left: 10px;
+  outline: none;
+  border-radius: 2px;
+  height: 35px;
+  width: 280px;
+  border-radius: 10px;
+  border: none;
+  background: var(--taupe);
+}
+
+.form-input::placeholder {
+  color: var(--darkblue);
+  /* text-align: center; */
+}
+
+.form-input-btn {
+  border: none;
+  width: 300px;
+  height: 35px;
+  margin-top: 10px;
+  border-radius: 10px;
+  color: var(--darkblue);
+  background: var(--lightblue);
+}
+
+.form-input-btn:hover {
+  cursor: pointer;
+  color: var(--darkblue);
+  background: var(--taupe);
+}
