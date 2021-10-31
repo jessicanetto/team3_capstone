@@ -33,7 +33,9 @@ const QrCode = () => {
             <hr />
             <Link to="/external">
                 <button>
-                    <img src ={src} />
+                    <img
+                    alt="source"
+                    src ={src} />
                 </button>            
             </Link>
 
