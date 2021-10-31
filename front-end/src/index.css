@@ -1,16 +1,20 @@
-*, h1 {
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  font-family: sans-serif;
   --darkblue: #1d3557;
   --lightblue: #45789d;
   --taupe: #f1faee;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+h1 {
+  font-family: Oswald, sans-serif;
+}
 
 body {
   background-color: #ede9e7;
   margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
 /* code {
