@@ -64,7 +64,7 @@ const ConnectionsList = () => {
         value={searchTerm}
         onChange={handleSearch}
       />
-      <table>
+      <table className="connections-table">
         <thead>
           <tr>
             <th>Name</th>
