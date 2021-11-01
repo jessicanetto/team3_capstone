@@ -7,24 +7,55 @@
   --taupe: #e5e5e5;
 }
 
-h1 {
-  font-family: Oswald, sans-serif;
-}
-
 body {
   background-color: var(--taupe);
   margin: 0;
   padding: 0;
 }
 
+h1 {
+  font-family: Oswald, sans-serif;
+}
 
 button {
   border: var(--darkblue) solid 1px;
 }
 
+table,
+th,
+td {
+  border: 3px solid var(--lightblue);
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px;
+}
+
+.connections-btn {
+  display: block;
+}
+
 .App {
   display: flex;
   justify-content: center;
+}
+
+.dashboard {
+  height: 80vh;
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+  background-color: var(--darkblue);
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
 }
 
 .dashboard img {
@@ -42,6 +73,15 @@ button {
 
 .connections {
   text-align: center;
+}
+
+.connections-table {
+background: var(--darkblue);
+color: var(--taupe);
+}
+
+.connections-table a {
+  color: var(--taupe);
 }
 
 /* landing page */
@@ -88,132 +128,25 @@ button {
 .eMail,
 .webSite {
   background: var(--taupe);
-  /* border: #ccc 1px solid; */
-  /* border-bottom: #ccc 2px solid; */
-  padding: 8px;
   width: 250px;
+  height: 35px;
   color: #aaaaaa;
-  margin-top: 5px;
   font-size: 18px;
   border-radius: 4px;
-}
-
-.cardDiv {
-  width: 41em;
-  height: 22em;
-  background-color: var(--darkblue);
-  margin: 5% auto 0 auto;
-  border-radius: 0.4em;
-  border-top-right-radius: 0.37em;
-  border-bottom-right-radius: 0.37em;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
-  transition: box-shadow 200ms ease-in;
-}
-
-.cardDiv:before {
-  content: "";
-  background: var(--darkblue);
-
-  -webkit-animation: AnimationName 15s ease infinite;
-  -moz-animation: AnimationName 15s ease infinite;
-  animation: AnimationName 15s ease infinite;
-  background-size: 600% 600%;
-  background-position: 30% 70%;
-  width: 12em;
-  height: 22em;
-  display: block;
-  position: absolute;
-}
-
-.card {
-  padding: 1.6em 2em 2em 14em;
-}
-
-.cardName {
-  color: var(--taupe);
-  font-size: 2.2em;
-  letter-spacing: 1px;
-}
-
-hr {
-  height: 2px;
-  background: var(--lightblue);
   border: none;
-  margin: 1em 0;
-  width: 85%;
+  text-align: center;
 }
 
+.cardName,
 .cardAddress,
 .cardPhoneNumber,
 .cardEmail,
 .cardWebsite {
-  margin: 1em 0;
-  font-weight: 700;
   color: var(--taupe);
 }
 
 .cardWebsite a:link {
   color: var(--taupe);
-}
-
-@-webkit-keyframes AnimationName {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@-moz-keyframes AnimationName {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes AnimationName {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-table,
-th,
-td {
-  border: 3px solid var(--darkblue);
-}
-
-table {
-  border-collapse: collapse;
-}
-
-td {
-  padding: 10px;
-}
-
-.card i {
-  font-size: 2rem;
-  margin-right: 1rem;
-  color: var(--taupe);
-}
-
-.card p {
-  display: flex;
-  align-items: center;
 }
 
 /* these are buttons on dashboard */
@@ -246,6 +179,17 @@ td {
   margin-left: 0.5rem;
 }
 
+.card i {
+  font-size: 2rem;
+  margin-right: 1rem;
+  color: var(--taupe);
+}
+
+.card p {
+  display: flex;
+  align-items: center;
+}
+
 .dash-edit-btns button {
   margin-right: 1rem;
   border-radius: 2rem;
@@ -260,7 +204,7 @@ td {
 .dash-edit-btns {
   display: flex;
   justify-content: space-between;
-  margin-top: 1rem;
+  margin-top: 3%;
 }
 /* -------------- */
 
@@ -273,4 +217,3 @@ td {
   border-radius: 2rem;
   cursor: pointer;
 }
-

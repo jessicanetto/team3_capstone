@@ -1,3 +1,10 @@
+* {
+  font-family: sans-serif;
+  --darkblue: #1d3557;
+  --lightblue: #45789d;
+  --taupe: #e5e5e5;
+}
+
 .cardDiv {
     width:41em;
     height:22em;
@@ -8,15 +15,12 @@
     border-bottom-right-radius:0.37em;
     box-shadow:0 0 3px rgba(0,0,0,0.15);
     transition:box-shadow 200ms ease-in;
-    color:#EDE9E7;
-
+    color:var(--taupe);
   }
   
   .cardDiv:before{
     content:'';
     background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(138,52,149,1) 22%);
-
-
     -webkit-animation: AnimationName 15s ease infinite;
     -moz-animation: AnimationName 15s ease infinite;
     animation: AnimationName 15s ease infinite;
@@ -32,9 +36,16 @@
   .card {
     padding:1.6em 2em 2em 14em;
     }
+
+  .card a{
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: var(--taupe);
+    text-decoration: none;
+  }
       
   .cardName {
-    color: #EDE9E7;
+    color: var(--taupe);
     font-size:2.2em;
     letter-spacing:1px;
     }
@@ -50,14 +61,7 @@
   .cardAddress, .cardPhoneNumber, .cardEmail, .cardWebsite{
     margin:1em 0;
     font-weight:700;
-    color: #EDE9E7;
+    color: var(--taupe);
 
-  }
-
-  .card a{
-    font-size: 2rem;
-    margin-right: 1rem;
-    color: #EDE9E7;
-    text-decoration: none;
   }
 

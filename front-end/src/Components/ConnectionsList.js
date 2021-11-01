@@ -63,6 +63,9 @@ const ConnectionsList = () => {
         value={searchTerm}
         onChange={handleSearch}
       />
+      <Link to="/dashboard" className="connections-btn">
+        <button>back</button>
+      </Link>
       <table className="connections-table">
         <thead>
           <tr>
@@ -116,7 +119,6 @@ const ConnectionsList = () => {
           )}
         </tbody>
       </table>
-      <Link to="/dashboard">back</Link>
     </>
   );
 };

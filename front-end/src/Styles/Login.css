@@ -34,15 +34,15 @@
 }
 
 
-form{
+/* form{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     min-height: 12rem;
     
-}
+} */
 
-input{
+/* input{
     width: 12rem;
     height: 2rem;
     border-radius: 10px;
@@ -51,7 +51,7 @@ input{
     border-bottom: solid;
     margin-top:.5em;
     
-}
+} */
 
 .login-btn{
     border-radius: 10px;
